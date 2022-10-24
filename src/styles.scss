@@ -1,0 +1,56 @@
+@import "./variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  body {
+    font-family: "Helvetica Neue", Helvetica;
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    button {
+      cursor: pointer;
+      transition: 0.2s;
+      &:active {
+        opacity: 0.8;
+      }
+    }
+
+    .btn-red {
+      background-color: $red-light;
+      &:hover {
+        color: white;
+        background-color: $red-dark;
+      }
+    }
+
+    .btn-green {
+      background-color: $green-light;
+      &:hover {
+        color: white;
+        background-color: $green-dark;
+      }
+    }
+    .btn-add {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+      font-size: 20px;
+      font-weight: 700;
+      margin-left: auto;
+      width: 100px;
+      height: 50px;
+
+      img {
+        margin-left: 5px;
+        width: 30px;
+      }
+    }
+  }
+}
+/* You can add global styles to this file, and also import other style files */

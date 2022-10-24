@@ -1,0 +1,16 @@
+<div class="product-list">
+  <div class="product-list__item" *ngFor="let product of productList">
+    <a [routerLink]="['/product', product.id]">
+      <img class="item__image" src="{{ product.image }}" alt="product image" />
+      <h3 class="item__name">{{ product.name }}</h3>
+    </a>
+    <h4 class="item__price">{{ product.price | currency: "BRL" }}</h4>
+    <button class="btn-add btn-green" (click)="addToCart(product)">
+      Add
+      <img
+        src="/assets/images/add_shopping_cart.png"
+        alt="Shopping cart icon"
+      />
+    </button>
+  </div>
+</div>

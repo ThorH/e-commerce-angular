@@ -1,0 +1,11 @@
+<div class="product">
+  <img class="product__image" src="{{ product.image }}" alt="product image" />
+  <h3 class="product__name">{{ product.name }}</h3>
+  <h4 class="product__price">{{ product.price | currency: "BRL" }}</h4>
+  <h4 class="product__quantity">Quantity: {{ product.quantity }}</h4>
+  <p class="product__description">{{ product.description }}</p>
+  <button class="btn-add btn-green" (click)="addToCart(product)">
+    Add
+    <img src="/assets/images/add_shopping_cart.png" alt="Shopping cart icon" />
+  </button>
+</div>

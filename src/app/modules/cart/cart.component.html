@@ -1,0 +1,39 @@
+<div class="cart-container">
+  <div class="shopping-cart">
+    <div (click)="clickCart()" class="cart-icon">
+      <img src="/assets/images/shopping_cart.png" alt="Shopping cart icon" />
+    </div>
+    <div *ngIf="showCart" class="cart-dropdown">
+      <div class="cart-dropdown__empty" *ngIf="!cartProducts.length">
+        <p>Cart is empty!</p>
+      </div>
+      <div class="cart-dropdown__total" *ngIf="cartProducts.length">
+        <p>Total: {{ total | currency: "BRL" }}</p>
+      </div>
+      <div class="cart-dropdown__product-list" *ngIf="cartProducts.length">
+        <div class="product-list__item" *ngFor="let product of cartProducts">
+          <img src="{{ product.image }}" alt="" />
+          <div class="item__info">
+            <p class="info__name">{{ product.name }}</p>
+            <p class="info__price">
+              {{ product.price | currency: "BRL" }}
+            </p>
+          </div>
+          <div class="item__quantity">
+            <button class="btn-red" (click)="decreaseQuantity(product.id)">
+              -
+            </button>
+            <p>{{ product.quantity }}</p>
+            <button class="btn-green" (click)="increaseQuantity(product.id)">
+              +
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="cart-dropdown__actions" *ngIf="cartProducts.length">
+        <button class="btn-green">Buy</button>
+        <button class="btn-red" (click)="clearCart()">Clear</button>
+      </div>
+    </div>
+  </div>
+</div>

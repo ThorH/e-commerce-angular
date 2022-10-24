@@ -1,0 +1,32 @@
+@import "../../../../../variables";
+
+.product {
+  width: 500px;
+  padding: 30px;
+
+  box-shadow: $box-shadow;
+  .product__image {
+    width: 100%;
+  }
+
+  .product__name {
+    padding: 5px;
+    text-align: center;
+    font-size: 26px;
+  }
+
+  .product__price {
+    margin-bottom: 1px;
+    font-size: 24px;
+  }
+
+  .product__quantity {
+    margin-top: 5px;
+    font-size: 18px;
+  }
+
+  .product__description {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
