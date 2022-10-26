@@ -2,26 +2,27 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
 
-## Development server
+## Installing dependencies and running project
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `npm install` to install dependencies and `npm start` to start the project in
+`http://localhost:4200/`.
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `ng test` to execute the unit tests or `ng test --code-coverage` to execute the unit test with coverage stats via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Project description
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+the purpose of this project is to simulate the cart function of an e-commerce. So there's only the main page of an e-commerce with mocked product data, and the cart dropdown. The user can add and remove products in the cart and can see the purchase total.
 
-## Further help
+## Dependencies
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<ul>
+    <li>ngx-toastr</li>
+    <li>Angular material</li>
+</ul>
+
+<div align="center">
+    <p><strong>E-commerce cart</strong></p>
+    <img width="500" src="readme/gifs/e-commerce.gif">
+</div>
