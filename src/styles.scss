@@ -22,17 +22,21 @@
 
     .btn-red {
       background-color: $red-light;
+      color: $black;
+
       &:hover {
-        color: white;
         background-color: $red-dark;
+        color: $white;
       }
     }
 
     .btn-green {
       background-color: $green-light;
+      color: $black;
+      
       &:hover {
-        color: white;
         background-color: $green-dark;
+        color: $white;
       }
     }
     .btn-add {
